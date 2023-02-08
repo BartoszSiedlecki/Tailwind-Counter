@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="/src/script.js" defer></script>
+</head>
+<body>
+    <div class="absolute -z-10 h-screen w-screen bg-gradient-to-b from-slate-900 to-violet-900">
+        <img class="absolute left-0 top-0 w-full" src="/src/images/bg-stars.svg" alt="stars-background"/>
+        <img class="absolute left-0 bottom-0 w-full" src="/src/images/pattern-hills.svg" alt="stars-background"/>
+    </div>
+    <main class="flex h-screen w-screen justify-center items-center">
+        <div>
+            <h1 class="h-32 w-full flex justify-center text-white uppercase text-2xl tracking-widest font-semibold">
+                We're launching soon
+            </h1>
+            <div class="flex items-center justify-center text-red-900 gap-12 h-64 w-full">
+                <div class="flex relative bg-gray-800 w-40 h-40 overflow-hidden rounded-md items-center justify-center"> 
+                    <div class="absolute h-full w-full flex justify-center">
+                        <h2 class="text-3xl font-bold" id="days-left"></h2>
+                    </div>
+                    <div class="absolute top-16 -left-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute top-16 -right-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute bottom-6 w-full h-16 bg-gray-700 opacity-20"></div>
+                    <div class="absolute bottom-4 w-full h-2 bg-gray-600 opacity-40 rounded-b-md z-10"></div>
+                    <div class="absolute bottom-0 w-full h-6 bg-gray-900"></div>
+                </div>
+                <div class="flex relative bg-gray-800 w-40 h-40 overflow-hidden rounded-md items-center justify-center"> 
+                    <div class="absolute h-full w-full flex justify-center">
+                        <h2 class="text-3xl font-bold" id="hours-left"></h2>
+                    </div>
+                    <div class="absolute top-16 -left-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute top-16 -right-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute bottom-6 w-full h-16 bg-gray-700 opacity-20"></div>
+                    <div class="absolute bottom-4 w-full h-2 bg-gray-600 opacity-40 rounded-b-md z-10"></div>
+                    <div class="absolute bottom-0 w-full h-6 bg-gray-900"></div>
+                </div>
+                <div class="flex relative bg-gray-800 w-40 h-40 overflow-hidden rounded-md items-center justify-center"> 
+                    <div class="absolute h-full w-full flex justify-center">
+                        <h2 class="text-3xl font-bold" id="minutes-left"></h2>
+                    </div>
+                    <div class="absolute top-16 -left-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute top-16 -right-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute bottom-6 w-full h-16 bg-gray-700 opacity-20"></div>
+                    <div class="absolute bottom-4 w-full h-2 bg-gray-600 opacity-40 rounded-b-md z-10"></div>
+                    <div class="absolute bottom-0 w-full h-6 bg-gray-900"></div>
+                </div>
+                <div class="flex relative bg-gray-800 w-40 h-40 overflow-hidden rounded-md items-center justify-center"> 
+                    <div class="absolute h-full w-full flex justify-center">
+                        <h2 class="text-3xl font-bold" id="seconds-left"></h2>
+                    </div>
+                    <div class="absolute top-16 -left-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute top-16 -right-2 h-4 w-4 bg-gray-900 z-10 rounded-full"></div>
+                    <div class="absolute bottom-6 w-full h-16 bg-gray-700 opacity-20"></div>
+                    <div class="absolute bottom-4 w-full h-2 bg-gray-600 opacity-40 rounded-b-md z-10"></div>
+                    <div class="absolute bottom-0 w-full h-6 bg-gray-900"></div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center text-gray-900 gap-12 h-16 ">
+                <div class="flex relative w-40 justify-center"> 
+                    <h3 class="text-lg font-bold tracking-widest uppercase">days</h3>
+                </div>
+                <div class="flex relative w-40 justify-center"> 
+                    <h3 class="text-lg font-bold tracking-widest uppercase">hours</h3>
+                </div>
+                <div class="flex relative w-40 justify-center"> 
+                    <h3 class="text-lg font-bold tracking-widest uppercase">minutes</h3>
+                </div>
+                <div class="flex relative w-40 justify-center"> 
+                    <h3 class="text-lg font-bold tracking-widest uppercase">seconds</h3>
+                </div>
+            </div>
+            <div class="flex w-full justify-center items-end gap-12 h-64">
+                <img class="h-6 cursor-pointer" src="/src/images/icon-facebook.svg" alt="facebook"/>
+                <img class="h-6 cursor-pointer" src="/src/images/icon-instagram.svg" alt="facebook"/>
+                <img class="h-6 cursor-pointer" src="/src/images/icon-pinterest.svg" alt="facebook"/>
+            </div>
+        </div>   
+    </main>   
+</body>
+</html>
